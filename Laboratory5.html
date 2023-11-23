@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laboratory 5</title>
+	<style>
+		* {
+			font-family: 'Biotif';
+			text-align: center;
+		}
+		input {
+			font-size: 20px;
+			text-align: left;
+		}
+		body{
+			background-color: #F3EEEA;
+		}
+		.container {
+			background-color: #EBE3D5 ;
+			margin: 100px 300px;
+			padding: 50px;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+			border-radius: 20px;
+			border: #B0A695 solid 1px;
+			overflow: hidden;
+			border-top: solid #B0A695 25px;
+		}
+		#result {
+			font-size: 25px;
+			padding: 20px;
+			background-color: #B0A695;
+			margin: 25px 150px;
+			border-radius: 10px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			transition: .75s ease-in-out;
+		}
+		button {
+			color: #F3EEEA;
+			padding: 15px 20px;
+			background-color: #776B5D;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			border: #776B5D hidden 1px;
+			border-radius: 5px;
+			display: block;
+			margin:25px auto;
+			font-size: 14px;
+			font-weight: 600;
+			transition: .75s ease-in-out;
+			overflow: hidden;
+		}
+		button:hover{
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+			transition: .75s ease-in-out;
+			cursor: pointer;
+			transform: scale(1.01);
+			color: black;
+			background-color: #F3EEEA;
+			overflow: hidden;
+			
+		}
+	</style>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to the JavaScript World!!</h1>
+		<h3>AREA OF CIRCLE</h3>
+
+		<label for="radiusVal">Enter a value of the radius:</label>
+		<input type="number" id="radiusVal" autofocus>
+
+		<button onclick="getArea()">Compute the area of circle</button>
+		<div id="result">The area of circle is</div>
+	
+</body>
+</html>
